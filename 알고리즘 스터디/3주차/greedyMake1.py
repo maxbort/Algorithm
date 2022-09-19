@@ -1,0 +1,17 @@
+n,k = map(int,input().split())
+
+cnt = 0
+while True:
+    if n == 1:
+        break
+    
+    
+    if n%k == 0 and n>=k:
+        n = int(n/k)
+        cnt += 1
+    else:
+        n -= 1
+        cnt += 1
+    
+    
+print(cnt)
