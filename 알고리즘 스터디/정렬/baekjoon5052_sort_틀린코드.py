@@ -23,8 +23,8 @@ for i in range(n):
             else:
                 cnt = 0
         if check == False: # check가 false면 접두어가 있는경우 이므로 no 출력 후 반복문 탈출
-            print('no')
+            print('NO')
             break
     if check:    # 전체를 검사 후 check가 True면 접두어가 없으므로 yes
-        print('yes')
+        print('YES')
             

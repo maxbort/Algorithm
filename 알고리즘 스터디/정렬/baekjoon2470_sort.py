@@ -6,7 +6,7 @@ liquid.sort()
 
 l, r = 0, n-1
 flag = abs(liquid[l] + liquid[r])
-answer = []
+answer = [l,r]
 while l < r:
     result = liquid[l] + liquid[r]
     if abs(result) < flag:

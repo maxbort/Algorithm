@@ -1,5 +1,5 @@
-N = 4
-stages = [4,4,4,4,4]
+N = int(input())
+stages = list(map(int,input().split()))
 
 def solution(N, stages):
     users = len(stages)
@@ -8,6 +8,8 @@ def solution(N, stages):
         scf.append([0,num])
         
     for i in range(N+1):
+        if users == 0:
+            break
         fail_user = stages.count(i)
         fail_rate = fail_user / users
         
@@ -20,8 +22,8 @@ def solution(N, stages):
     answer =[]
     for i in scf:
         answer.append(i[1])
-    print(answer)
 
+    return answer
 
 
 

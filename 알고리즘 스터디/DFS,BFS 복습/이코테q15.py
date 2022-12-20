@@ -3,16 +3,15 @@ graph = []
 for i in range(n):
     graph.append(list(map(int,input().split())))
 
-visited = [-1] * m
+visited = [-1] * (n+1)
+visited[x] = 0
 
-result =0
-def dfs(graph,x,n,visited,result):
-    visited[x] = result
-    
-    for i in range(n):
+def dfs(graph,visited,x):
+    for i in graph[x]:
+        if i == x:
+            continue
         if visited[i] != 0:
-            result+=1
-            dfs(graph,i,n,visited,result)
+            visited[i] = visited
 
 dfs(graph,x,n,visited,0)
 print(visited)

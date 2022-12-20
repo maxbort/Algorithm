@@ -16,7 +16,7 @@ result = end
 if c < 3:
     print(result)
 else:
-    while start < end:
+    while start <= end:
         mid = (start+end) // 2
         point = home[0]
         cnt = 1
@@ -29,5 +29,5 @@ else:
             result = mid
             start = mid + 1
         elif cnt < c:
-            end = mid
+            end = mid - 1
     print(result)
