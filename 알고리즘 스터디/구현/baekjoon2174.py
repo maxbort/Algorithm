@@ -71,7 +71,6 @@ for r, order, cnt in orders:
             
             graph[dy][dx] = r+1
 
-
             for i in graph:
                 print(i)
 

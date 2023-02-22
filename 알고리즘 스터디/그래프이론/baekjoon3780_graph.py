@@ -21,14 +21,10 @@ for i in range(t):
         order = input().split()
         if order[0] == 'E':
             renew(int(order[1]))
-            print(dist,"here is first")
-            print(order,"here is first")
             print(dist[int(order[1])])
         elif order[0] == 'I':
             dist[int(order[1])] = abs(int(order[2]) - (int(order[1]))) % 1000
             root[int(order[1])] = int(order[2]) 
-            print(dist ,"here is second")
-            print(order, "here is second")
         else:
             break
 
