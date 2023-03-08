@@ -12,7 +12,6 @@ for _ in range(n-1):
 root = [0] * (n+1)
 
 def dfs(graph, v, root):
-
     for i in graph[v]:
         if root[i] == 0:
             root[i] = v

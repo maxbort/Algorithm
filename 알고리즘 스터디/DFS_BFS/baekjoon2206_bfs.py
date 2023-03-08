@@ -7,7 +7,6 @@ graph = []
 
 visited = [[[0] * 2 for _ in range(m)] for _ in range(n)]
 visited[0][0][0] = 1
-print(visited)
 for i in range(n):
     graph.append(list(map(int,input().rstrip())))
 
@@ -36,6 +35,4 @@ def bfs(a,b,c):
                     queue.append((nx,ny,z))
     return -1
 
-print(graph)
 print(bfs(0,0,0))
-print(visited)

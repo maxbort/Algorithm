@@ -23,16 +23,15 @@ queue = deque()
 
 for i in range(m):
     for j in range(n):
-        print(i,j, "error point")
         if graph[i][j] == 0:
             v = 1
             graph[i][j] = 1
             queue.append((i,j))
             while queue:
                 x,y = queue.popleft()
-                for i in range(4):
-                    nx = x + dx[i]
-                    ny = y + dy[i]
+                for k in range(4):
+                    nx = x + dx[k]
+                    ny = y + dy[k]
                     if 0 <= nx < m and 0 <= ny < n and graph[nx][ny] == 0:
                         graph[nx][ny] = 1
                         v += 1
