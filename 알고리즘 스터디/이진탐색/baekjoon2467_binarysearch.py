@@ -1,17 +1,15 @@
 import sys
 input = sys.stdin.readline
 
-
 n = int(input())
 liq = list(map(int,input().split()))
 
-answer = 1000000000
+answer = 1000000000000
 ans1 = 0
 ans2 = 0
 
 for i in range(n-1):
     check = liq[i]
-    
     start = i+1
     end = n-1
     

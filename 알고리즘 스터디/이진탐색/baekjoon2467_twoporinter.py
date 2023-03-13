@@ -14,7 +14,7 @@ ans2 = n-1
 while start < end:
     a = liq[start] + liq[end]
     if abs(a) < temp:
-        temp = a
+        temp = abs(a)
         ans1 = start
         ans2 = end
         if a == 0:
