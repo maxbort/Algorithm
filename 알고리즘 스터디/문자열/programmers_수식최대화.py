@@ -1,5 +1,6 @@
 import itertools
 
+
 def solution(expression):
     operator = ['*', '+', '-']
     operator = itertools.permutations(operator,3)
