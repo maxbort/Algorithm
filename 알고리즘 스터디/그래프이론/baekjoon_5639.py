@@ -81,7 +81,7 @@ def post_order(left,right):
         return
     
     tmp = n[left]
-    div = right + 1
+    div = right + 1 # 이 부분에서 시간 오래걸림 씨부레
     for i in range(left + 1, right+1):
         if n[i] > tmp:
             div = i
