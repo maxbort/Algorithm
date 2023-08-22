@@ -19,9 +19,6 @@ for i in range(n):
         if num_list_rev[i] > num_list_rev[j]:
             decrease[i] = max(decrease[i],decrease[j]+1)
 
-print(increase)
-print(decrease)
-
 answer = [0 for _ in range(n)]
 
 for a in range(n):
