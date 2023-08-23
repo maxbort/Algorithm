@@ -6,6 +6,7 @@ dy = [0,0,-1,1]
 
 n,m = map(int,input().split())
 graph = []
+q = deque()
 
 for _ in range(n):
     graph.append(list(map(int,input().split())))
@@ -14,7 +15,7 @@ visit = [[False for _ in range(m)] for _ in range(n)]
 cheeze_list =[]
 
 def cheeze_melt():
-    q = deque()
+    
     visit = [[False for _ in range(m)] for _ in range(n)]
 
     q.append((0,0))
@@ -25,7 +26,7 @@ def cheeze_melt():
         for i in range(4):
             nx = x + dx[i]
             ny = y + dy[i]
-            if 0 <= nx < n and 0 < ny < m and not visit[nx][ny]:
+            if 0 <= nx < n and 0 <= ny < m and not visit[nx][ny]:
                 if graph[nx][ny] == 0:
                     visit[nx][ny] = True
                     q.append((nx,ny))
