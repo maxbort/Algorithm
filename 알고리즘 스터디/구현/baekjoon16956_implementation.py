@@ -20,7 +20,6 @@ for i in range(n):
                         if pas[ni][nj] != 'S':
                             pas[ni][nj] = 'D'
 
-
 print(1)
 for i in pas:
     print("".join(i))

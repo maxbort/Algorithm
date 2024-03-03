@@ -15,7 +15,6 @@ visit = [[False for _ in range(m)] for _ in range(n)]
 cheeze_list =[]
 
 def cheeze_melt():
-    
     visit = [[False for _ in range(m)] for _ in range(n)]
 
     q.append((0,0))
